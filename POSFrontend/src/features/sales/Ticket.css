@@ -1,0 +1,142 @@
+.ticket-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+}
+
+.ticket-modal {
+  background: #f1f5f9;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-modal__titulo {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.ticket-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Vista previa */
+.ticket-preview {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ticket {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  width: 260px;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ticket-header h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.ticket-header p {
+  font-size: 11px;
+  color: #444;
+}
+
+.ticket-divider {
+  border-top: 1px dashed #999;
+  margin: 8px 0;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+  font-size: 11px;
+}
+
+.ticket-productos { margin: 6px 0; }
+.ticket-producto { margin: 6px 0; }
+.ticket-producto-nombre {
+  font-size: 11px;
+  font-weight: bold;
+}
+.ticket-producto-detalle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #555;
+}
+
+.ticket-totales { margin-top: 6px; }
+.ticket-total-final {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.ticket-footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #444;
+}
+.ticket-footer p { margin: 2px 0; }
+
+/* Botones */
+.btn-imprimir {
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-imprimir:hover { background: #1e293b; }
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: #2563eb; }
+
+.btn-cancelar {
+  background: white;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-cancelar:hover { background: #f1f5f9; }

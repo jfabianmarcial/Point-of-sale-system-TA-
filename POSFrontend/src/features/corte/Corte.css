@@ -1,0 +1,213 @@
+.corte {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.corte__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.corte__titulo {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.corte__sub {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+.corte__header-acciones {
+  display: flex;
+  gap: 8px;
+}
+
+/* Cards resumen */
+.corte__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.corte-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid;
+}
+.corte-card--green  { border-color: #22c55e; }
+.corte-card--blue   { border-color: #3b82f6; }
+.corte-card--amber  { border-color: #f59e0b; }
+.corte-card--purple { border-color: #a855f7; }
+
+.corte-card__label {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+.corte-card__value {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.corte-card__sub {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Desglose */
+.corte__desglose {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+.desglose-card {
+  flex: 1;
+  text-align: center;
+}
+.desglose-card__icon { font-size: 24px; margin: 0 0 4px; }
+.desglose-card__label {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+.desglose-card__value {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.desglose-card--total .desglose-card__value { color: #22c55e; }
+.desglose__separador {
+  font-size: 24px;
+  color: #94a3b8;
+  font-weight: 300;
+}
+
+/* Card y tabla */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+.card__title {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.table th {
+  padding: 8px 12px;
+  text-align: left;
+  color: #94a3b8;
+  font-weight: 500;
+  border-bottom: 1px solid #f1f5f9;
+}
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #f8fafc;
+  color: #0f172a;
+}
+.table tr:last-child td { border-bottom: none; }
+.tabla-vacia {
+  text-align: center;
+  color: #94a3b8;
+  padding: 32px !important;
+}
+
+/* Realizar corte */
+.corte__realizar { display: flex; flex-direction: column; gap: 16px; }
+.corte__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.corte__exito {
+  background: #f0fdf4;
+  color: #16a34a;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.corte__btn-realizar {
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+.corte__btn-realizar:hover { background: #1e293b; }
+
+/* Badges */
+.badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.badge--green  { background: #dcfce7; color: #16a34a; }
+.badge--blue   { background: #dbeafe; color: #2563eb; }
+.badge--red    { background: #fee2e2; color: #dc2626; }
+.badge--amber  { background: #fef3c7; color: #d97706; }
+.badge--purple { background: #f3e8ff; color: #9333ea; }
+
+/* Filtros */
+.cat-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cat-btn:hover { border-color: #3b82f6; color: #3b82f6; }
+.cat-btn--active { background: #3b82f6; border-color: #3b82f6; color: white; font-weight: 500; }
+
+/* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+.form-group input {
+  padding: 9px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+.form-group input:focus { border-color: #3b82f6; }
+
+/* Helpers */
+.text-bold  { font-weight: 600; }
+.text-muted { color: #64748b; }
+.text-green { color: #22c55e; }
+.text-blue  { color: #3b82f6; }
+.text-red   { color: #dc2626; }
